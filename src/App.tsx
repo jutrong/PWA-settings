@@ -1,26 +1,36 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.11
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="container">
+      <h1>Root</h1>
+      <Left1></Left1>
     </div>
   );
 }
 
+function Left1() {
+  return (
+    <div>
+      <h1>Left1</h1>
+      <Left2></Left2>
+    </div>
+  );
+}
+function Left2() {
+  return (
+    <div>
+      <h1>Left2</h1>
+      <Left3></Left3>
+    </div>
+  );
+}
+function Left3() {
+  return (
+    <div>
+      <h1>Left3</h1>
+    </div>
+  );
+}
 export default App;
