@@ -1,36 +1,7 @@
 import React from "react";
 import "./App.css";
-
+import Feed from "./Feed";
 function App() {
-  return (
-    <div id="container">
-      <h1>Root</h1>
-      <Left1></Left1>
-    </div>
-  );
-}
-
-function Left1() {
-  return (
-    <div>
-      <h1>Left1</h1>
-      <Left2></Left2>
-    </div>
-  );
-}
-function Left2() {
-  return (
-    <div>
-      <h1>Left2</h1>
-      <Left3></Left3>
-    </div>
-  );
-}
-function Left3() {
-  return (
-    <div>
-      <h1>Left3</h1>
-    </div>
-  );
+  return <Feed></Feed>;
 }
 export default App;
